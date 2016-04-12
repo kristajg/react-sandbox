@@ -1,15 +1,14 @@
 import React from 'react';
-import {Link} from 'react-router';
+import Navigation from './navigation';
 
 export default class Secondary extends React.Component {
   render() {
     return (
       <div>
-        Here's a secondary component
-        <ul>
-        	<li><Link to='/'>Main</Link></li>
-        	<li><Link to='/secondary'>Secondary</Link></li>
-        </ul>        
+        <Navigation />
+        <div className="container">
+          Here's a secondary component      
+        </div>      
       </div>
     );
   }

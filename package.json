@@ -1,9 +1,12 @@
 {
   "name": "react-sandbox",
   "version": "0.0.1",
-  "private": true,
-  "author": "Krista Goralczyk",
   "description": "React sandbox",
+  "author": "Krista Goralczyk (http://kristagoralczyk.com/)",
+  "keywords": [
+    "react",
+    "sandbox"
+  ],
   "scripts": {
     "build": "NODE_ENV=production webpack -p --config ./webpack.prod.config.js",
     "start": "webpack-dev-server --progress --colors --hot --content-base build --config ./webpack.config.js"

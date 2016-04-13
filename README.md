@@ -1,7 +1,7 @@
 # react-sandbox
 This is a base level sandbox app to pull down and start using React out of the box.  
 
-Includes webpack, react-router, and bootstrap.  
+Includes express, webpack, react-router, and bootstrap.  
 
 Skip the setup fatigue and start building a sandcastle.
 

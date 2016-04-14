@@ -1,5 +1,5 @@
 # react-sandbox
-This is a base level sandbox app to pull down and start using React out of the box.  
+This is an extremely light-weight boilerplate app to start developing with Facebook's [React.js](https://facebook.github.io/react/index.html).  
 
 Includes express, webpack, react-router, and bootstrap.  
 

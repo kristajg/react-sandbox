@@ -9,11 +9,11 @@
   ],
   "scripts": {
     "build": "NODE_ENV=production webpack -p --config ./webpack.prod.config.js",
-    "start": "webpack-dev-server --progress --colors --hot --content-base build --config ./webpack.config.js"
+    "start": "webpack-dev-server --progress --colors --hot --content-base build --config ./webpack.config.js",
+    "lint": "eslint ./app"
   },
   "dependencies": {
     "bootstrap": "^3.3.6",
-    "express": "^4.13.4",
     "react": "0.14.5",
     "react-dom": "0.14.5",
     "react-router": "^2.0.1"
@@ -23,23 +23,21 @@
     "babel-eslint": "^4.1.6",
     "babel-loader": "^6.2.1",
     "babel-plugin-transform-runtime": "^6.4.3",
+    "babel-polyfill": "^6.9.0",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
     "css-loader": "^0.16.0",
-    "eslint": "^2.5.3",
+    "eslint": "^1.2.1",
     "eslint-loader": "^1.0.0",
-    "eslint-plugin-react": "^4.2.3",
+    "eslint-plugin-react": "^3.3.0",
     "file-loader": "^0.8.5",
     "html-webpack-plugin": "1.7.0",
     "less": "^2.5.3",
     "less-loader": "^2.2.2",
-    "lodash": "^4.2.0",
-    "react-hot-loader": "^1.2.9",
-    "redux-logger": "^2.3.1",
     "style-loader": "^0.12.3",
     "url-loader": "^0.5.6",
-    "webpack": "^1.12.0",
+    "webpack": "^1.13.0",
     "webpack-dev-server": "^1.12.0"
   }
 }

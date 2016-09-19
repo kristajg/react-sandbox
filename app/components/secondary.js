@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Navigation from './navigation';
 
-export default class Secondary extends React.Component {
+export default class Secondary extends Component {
   render() {
     return (
       <div>

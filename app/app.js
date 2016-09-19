@@ -1,10 +1,9 @@
 // Framework and routing
 import React from 'react';
-import {render} from 'react-dom';
-import {Router, Route, Link, browserHistory} from 'react-router';
+import { render } from 'react-dom';
+import { Router, Route, Link, browserHistory } from 'react-router';
 
 // Include styles
-import Styles from './styles/main.less';
 
 // Import components for routing
 import Main from './components/main';

@@ -19,34 +19,27 @@ module.exports = {
     template: path.join(__dirname, './app/index.html'),
     inject: 'body'
   }), ],
-  module: {	
+  module: {
   	loaders: [
 	  { 
 	  	test: /\.css$/, 
-	  	loader: 'style!css',
-	  	include: [path.resolve(__dirname, 'app')],
-	  	exclude: /node_modules/
+	  	loader: 'style!css'
 	  },
 	  {
-	  	test: /\.less$/,
-	  	loader: 'style!css!less',
-	  	include: [path.resolve(__dirname, 'app')],
-	  	exclude: /node_modules/
+	  	test: /\.scss$/,
+      loaders: [ 'style', 'css?sourceMap', 'sass?sourceMap' ]
+	  	// loaders: ["style", "css", "sass"]
 	  },
 	  {
 	  	test: /\.js$/,
 	  	loader: 'babel',
 	  	query: {
 	  	  presets: ['react', 'es2015', 'stage-0']
-	  	}, 
-	  	include: [path.resolve(__dirname, 'app')], 
-	  	exclude: /node_modules/
+	  	}
 	  },
 	  {
 	  	test: /\.(png|jpg|gif|woff|woff2)$/,
-	  	loader: 'url-loader?limit=8192',
-	  	include: [path.resolve(__dirname, 'app')],
-	  	exclude: /node_modules/
+	  	loader: 'url-loader?limit=8192'
 	  },
 	  {
 	  	test: /\.woff(2)?(\?v=[0-9].[0-9].[0-9])?$/,
@@ -54,10 +47,15 @@ module.exports = {
 	  },
 	  {
 	  	test: /\.(ttf|eot|svg)(\?v=[0-9].[0-9].[0-9])?$/, 
-	  	loader: "file-loader?name=[name].[ext]",
-	  	include: [path.resolve(__dirname, 'app')],
-	  	exclude: /node_modules/
+	  	loader: "file-loader?name=[name].[ext]"
 	  }
   	]
+  },
+  sassLoader: {
+    includePaths: [
+      path.resolve(__dirname, "./app/stylesheets")
+      // path.resolve(__dirname, "./node_modules/bourbon")
+    ]
   }
 };
+

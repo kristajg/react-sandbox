@@ -15,7 +15,7 @@ module.exports = {
   },
   devtool: 'source-map',
   plugins: [new HtmlWebpackPlugin({
-    title: 'Krista Goralczyk\'s Site',
+    title: 'Reactjs Sandbox',
     template: path.join(__dirname, './app/index.html'),
     inject: 'body'
   }), ],
@@ -54,7 +54,6 @@ module.exports = {
   sassLoader: {
     includePaths: [
       path.resolve(__dirname, "./app/stylesheets")
-      // path.resolve(__dirname, "./node_modules/bourbon")
     ]
   }
 };

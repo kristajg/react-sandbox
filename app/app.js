@@ -1,18 +1,16 @@
-// Framework and routing
+// Framework libraries
 import React from 'react';
 import { render } from 'react-dom';
-import { Router, Route, Link, browserHistory } from 'react-router';
+import { Router, Route, browserHistory } from 'react-router';
 
-// Include styles
-
-// Import components for routing
+// Components
 import Main from './components/main';
 import Secondary from './components/secondary';
 
 render(
 	<Router history={browserHistory}>
-		<Route path="/" component={Main}/>
-		<Route path="/secondary" component={Secondary}/>
+		<Route path="/" component={Main} />
+		<Route path="/secondary" component={Secondary} />
 	</Router>,
 	document.getElementById('app')
 );

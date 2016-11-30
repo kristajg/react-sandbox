@@ -54,7 +54,6 @@ module.exports = {
   sassLoader: {
     includePaths: [
       path.resolve(__dirname, "./app/stylesheets")
-      // path.resolve(__dirname, "./node_modules/bourbon")
     ]
   }
 };

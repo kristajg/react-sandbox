@@ -1,4 +1,4 @@
-// Framework and routing
+// Framework libraries
 import React from 'react';
 import { render } from 'react-dom';
 import { Router, Route, browserHistory } from 'react-router';
@@ -9,8 +9,8 @@ import Secondary from './components/secondary';
 
 render(
 	<Router history={browserHistory}>
-		<Route path="/" component={Main}/>
-		<Route path="/secondary" component={Secondary}/>
+		<Route path="/" component={Main} />
+		<Route path="/secondary" component={Secondary} />
 	</Router>,
 	document.getElementById('app')
 );

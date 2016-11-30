@@ -1,6 +1,6 @@
 {
   "name": "react-sandbox",
-  "version": "0.0.1",
+  "version": "2.0.0",
   "description": "React sandbox",
   "author": "Krista Goralczyk (http://kristagoralczyk.com/)",
   "keywords": [
@@ -16,9 +16,10 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.6",
-    "react": "0.14.5",
-    "react-dom": "0.14.5",
-    "react-router": "^2.0.1"
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-router": "^2.0.1",
+    "superagent": "^2.3.0"
   },
   "devDependencies": {
     "babel-core": "^6.4.0",
@@ -34,12 +35,12 @@
     "eslint-loader": "^1.0.0",
     "eslint-plugin-react": "^3.3.0",
     "file-loader": "^0.8.5",
-    "html-webpack-plugin": "1.7.0",
+    "html-webpack-plugin": "^2.24.1",
     "less": "^2.5.3",
     "less-loader": "^2.2.2",
     "style-loader": "^0.12.3",
     "url-loader": "^0.5.6",
-    "webpack": "^1.13.0",
+    "webpack": "^1.13.3",
     "webpack-dev-server": "^1.12.0"
   }
 }

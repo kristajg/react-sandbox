@@ -15,7 +15,7 @@ module.exports = {
   },
   devtool: 'source-map',
   plugins: [new HtmlWebpackPlugin({
-    title: 'Krista Goralczyk\'s Site',
+    title: 'Reactjs Sandbox',
     template: path.join(__dirname, './app/index.html'),
     inject: 'body'
   }), ],

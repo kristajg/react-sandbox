@@ -9,7 +9,7 @@ module.exports = {
     path: __dirname + "/dist"
   },
   plugins: [new HtmlWebpackPlugin({
-    title: 'Krista Goralczyk\'s Site',
+    title: 'Reactjs Sandbox',
     template: path.join(__dirname, './app/index.html'),
     inject: 'body'
   }), ],
